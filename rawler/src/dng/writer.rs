@@ -2,8 +2,8 @@ use std::{
   borrow::Cow,
   io::{self, Seek, Write},
   mem::size_of,
-  time::Instant,
 };
+use web_time::Instant;
 
 use image::{DynamicImage, codecs::jpeg::JpegEncoder, imageops::FilterType};
 use log::debug;

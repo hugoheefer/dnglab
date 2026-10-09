@@ -14,7 +14,8 @@ use bitstream_io::BitReader;
 use itertools::izip;
 use log::debug;
 use rayon::prelude::*;
-use std::{convert::TryInto, io::Cursor, time::Instant};
+use std::{convert::TryInto, io::Cursor};
+use web_time::Instant;
 
 /// Maximum value for K during Adaptive Golomb-Rice for K prediction
 pub(super) const PREDICT_K_MAX: u32 = 15;

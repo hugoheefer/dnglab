@@ -23,6 +23,8 @@ inspector = []
 rawdb = ["dep:ureq", "dep:percent-encoding"]
 
 [dependencies]
+# std::time::Instant panics in WebAssembly in a browser; web-time is the same clock elsewhere.
+web-time = "1"
 backtrace = "0.3"
 bitstream-io = "4.1"
 byteorder = "1"
